@@ -14,22 +14,22 @@ public class User {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "user_id")
     private int id;
 
-    @Column(name = "first_name")
+    @Column(name = "user_firstName")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "user_lastName")
     private String lastName;
 
     @Column(name = "user_name")
     private String userName;
 
-    @Column(name = "email")
+    @Column(name = "user_email")
     private String email;
 
-    @Column(name = "password")
+    @Column(name = "user_password")
     private String password;
 
     public User(int id,String firstName, String lastName, String userName, String email, String password) {

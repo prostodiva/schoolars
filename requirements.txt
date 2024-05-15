@@ -1,0 +1,41 @@
+Requirements:
+
+Announcement may be posted by:
+users
+clubs
+
+users:
+create a new user(ID, first_name, last_name, email, password, major)
+
+clubs:
+create a new club that contains: club_id, club_name, club_role(President, vice president, adviser, cabinet member)
+for each role, we can see contact information (header and larger description) + image
+add new member to a club by using user’s: name, surname, email, major
+
+Test cases for user:
+adding a user if not already added
+Test if the platform contains a user after it's added.
+Test if the platform skips duplicate users.
+Removing user
+Test if a user gets removed after deleting the account.
+Test for an IllegalStateException for removing a removed user.
+searching a user
+Test if a user can be found through the users input:  by his: ID, first_name, last_name, email, password, major
+users must be sorted by major
+
+Test cases for clubs:
+adding a club if not already added
+Test if the platform contains a club after it's added.
+Test if the platform skips duplicate clubs.
+Removing club
+Test if a club gets removed.
+Test for an IllegalStateException for removing a removed club
+searching a club
+Test if a club can be found through the user’s input:  by its: name, related major
+add a new cabinet member to a club
+Test if the club contains a member after added.
+Test if the club skips duplicate members.
+
+Test cases for announcements:
+Send announcements by club using roles
+Send announcements  by users

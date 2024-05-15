@@ -1,13 +1,14 @@
 CREATE TABLE clubs (
 club_id SERIAL PRIMARY KEY,
 club_name VARCHAR(255) NOT NULL,
-cabinet_member VARCHAR(255) NOT NULL
+club_role VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE users (
 user_id SERIAL PRIMARY KEY,
 user_firstName VARCHAR(255) NOT NULL,
 user_lastName VARCHAR(255) NOT NULL,
+user_name  VARCHAR(255) NOT NULL,
 user_email VARCHAR(255) NOT NULL,
 user_password VARCHAR(255) NOT NULL
 );
