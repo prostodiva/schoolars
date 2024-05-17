@@ -19,15 +19,15 @@ links json
 
 CREATE TABLE clubs_users (
 id int REFERENCES clubs(id),
-user_id int REFERENCES users(user_id),
-role text default "MEMBER"
+user_id int REFERENCES users(id),
+role text
 );
 
 
 CREATE TABLE announcements (
 id SERIAL PRIMARY KEY,
-publisher_id int REFERENCES users (user_id),
-club_id int REFERENCES clubs (club_id),
+publisher_id int REFERENCES users (id),
+club_id int REFERENCES clubs (id),
 title VARCHAR(50),
 description text,
 is_meeting boolean default false,
