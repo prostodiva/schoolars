@@ -12,7 +12,7 @@ CREATE TABLE clubs (
 id SERIAL PRIMARY KEY,
 name VARCHAR(255) NOT NULL,
 logo UUID,
-discription text,
+description text,
 links json
 );
 
