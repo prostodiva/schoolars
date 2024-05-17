@@ -23,20 +23,16 @@ public class User {
     @Column(name = "user_lastName")
     private String lastName;
 
-    @Column(name = "user_name")
-    private String userName;
-
     @Column(name = "user_email")
     private String email;
 
     @Column(name = "user_password")
     private String password;
 
-    public User(int id,String firstName, String lastName, String userName, String email, String password) {
+    public User(int id,String firstName, String lastName, String email, String password) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.userName = userName;
         this.email = email;
         this.password = password;
     }
@@ -66,14 +62,6 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getUserName() {
-        return this.userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     public String getEmail() {

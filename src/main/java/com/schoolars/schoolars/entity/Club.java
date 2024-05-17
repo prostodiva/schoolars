@@ -1,5 +1,9 @@
 package com.schoolars.schoolars.entity;
 
+import java.net.URL;
+
+import javax.xml.crypto.Data;
+
 import org.springframework.data.annotation.Id;
 
 import jakarta.persistence.Column;
@@ -11,26 +15,35 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "clubs")
 public class Club {
-
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "club_id")
+    @Column(name = "id")
     private int id;
 
-    @Column(name = "club_name")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "club_role")
-    private String role;
+    @Column(name = "description")
+    private String description;
 
-    public Club(int id,String name, String role) {
-        this.id = id;
-        this.name = name;
-        this.role = role;
-    }
+    @Column(name = "logo")
+    private Data logo;
+
+    @Column(name = "links")
+    private URL links;
 
     public Club() {
+
     }
+
+    public Club(int id, String name, String description, Data logo, URL links) {
+        this.id = id;
+        this.name = name;
+        this.logo = logo;
+        this.links = links;
+    }
+
 
     public int getId() {
         return this.id;
@@ -48,13 +61,29 @@ public class Club {
         this.name = name;
     }
 
-    public String getRole() {
-        return this.role;
+    public String getDescription() {
+        return this.description;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    
+    public Data getLogo() {
+        return this.logo;
+    }
+
+    public void setLogo(Data logo) {
+        this.logo = logo;
+    }
+
+    public URL getLinks() {
+        return this.links;
+    }
+
+    public void setLinks(URL links) {
+        this.links = links;
+    }
+
+
 }
