@@ -1,22 +1,48 @@
-CREATE TABLE clubs (
-club_id SERIAL PRIMARY KEY,
-club_name VARCHAR(255) NOT NULL,
-club_role VARCHAR(255) NOT NULL
-);
 
 CREATE TABLE users (
-user_id SERIAL PRIMARY KEY,
+id SERIAL PRIMARY KEY,
 user_firstName VARCHAR(255) NOT NULL,
 user_lastName VARCHAR(255) NOT NULL,
-user_name  VARCHAR(255) NOT NULL,
 user_email VARCHAR(255) NOT NULL,
 user_password VARCHAR(255) NOT NULL
 );
 
+
+CREATE TABLE clubs (
+id SERIAL PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+logo UUID,
+discription text,
+links json
+);
+
+
+CREATE TABLE clubs_users (
+id int REFERENCES clubs(id),
+user_id int REFERENCES users(user_id),
+role text default "MEMBER"
+);
+
+
 CREATE TABLE announcements (
-announcements_id SERIAL PRIMARY KEY,
-user_id int,
-FOREIGN KEY (user_id) REFERENCES users (user_id),
-club_id int,
-FOREIGN KEY (club_id) REFERENCES clubs (club_id)
+id SERIAL PRIMARY KEY,
+publisher_id int REFERENCES users (user_id),
+club_id int REFERENCES clubs (club_id),
+title VARCHAR(50),
+description text,
+is_meeting boolean default false,
+created_at timestamp default NOW(),
+scheduled_for timestamp default NULL
+);
+
+CREATE TABLE announcements_registrations (
+announcements int REFERENCES announcements(id),
+users int REFERENCES users(id)
+);
+
+CREATE TABLE announcements_attachments (
+id SERIAL PRIMARY KEY,
+announcements_id int REFERENCES announcements(id),
+url uuid,
+position int 
 );

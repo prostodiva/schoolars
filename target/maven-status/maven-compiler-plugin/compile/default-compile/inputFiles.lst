@@ -1,3 +1,10 @@
-/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/SchoolarsApplication.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/AnnoucementPlatform.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/entity/Announcement.java
 /Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/entity/Club.java
 /Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/entity/User.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/repository/ClubRepository.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/repository/ClubRepositoryImpl.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/repository/UserRepository.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/repository/UserRepositoryImpl.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/web/ClubController.java
+/Users/evolvers/schoolars/src/main/java/com/schoolars/schoolars/web/UserController.java

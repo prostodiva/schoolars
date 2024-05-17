@@ -1,3 +1,10 @@
-com/schoolars/schoolars/entity/Club.class
-com/schoolars/schoolars/SchoolarsApplication.class
+com/schoolars/schoolars/web/ClubController.class
+com/schoolars/schoolars/repository/UserRepositoryImpl.class
+com/schoolars/schoolars/repository/UserRepository.class
+com/schoolars/schoolars/AnnoucementPlatform.class
+com/schoolars/schoolars/web/UserController.class
 com/schoolars/schoolars/entity/User.class
+com/schoolars/schoolars/repository/ClubRepository.class
+com/schoolars/schoolars/entity/Club.class
+com/schoolars/schoolars/repository/ClubRepositoryImpl.class
+com/schoolars/schoolars/entity/Announcement.class

@@ -2,15 +2,18 @@ Requirements:
 
 Announcement may be posted by:
 users
-clubs
+clubs(information with schedule)
 
+we don't need to create a user, we will connect to their table. ID, name, email
 users:
 create a new user(ID, first_name, last_name, email, password, major)
+I have to connect user to cabinet member
 
 clubs:
-create a new club that contains: club_id, club_name, club_role(President, vice president, adviser, cabinet member)
-for each role, we can see contact information (header and larger description) + image
+create a new club that contains: club_id, club_name, club_role(President, vice president, adviser, cabinet member) array of cabinet members
+for each role, we can see contact information (header and larger description) + image + links
 add new member to a club by using user’s: name, surname, email, major
+
 
 Test cases for user:
 adding a user if not already added
