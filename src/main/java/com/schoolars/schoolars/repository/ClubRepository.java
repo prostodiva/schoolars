@@ -1,10 +1,9 @@
 package com.schoolars.schoolars.repository;
+import com.schoolars.schoolars.entity.Club;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import com.schoolars.schoolars.entity.User;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, Integer>{
-
-
+public interface ClubRepository extends CrudRepository<Club, Integer>{
+    
 }

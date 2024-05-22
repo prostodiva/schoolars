@@ -9,15 +9,14 @@ public class UserController {
 @Autowired
 UserService userService;  
 
-    @GetMapping(value = "/user")
+    // @GetMapping(value = "/user")
     
 
-    @GetMapping(value = "/user/{id}")
+    // @GetMapping(value = "/user/{id}")
     
 
-    @PostMapping(value = "/user")
+    // @PostMapping(value = "/user")
     
-
-    @DeleteMapping("/delete/{id}/user")
+    // @DeleteMapping("/delete/{id}/user")
     
 }
